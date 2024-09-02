@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>  <! –– nav bar ––>
+            <ul>
+              <! –– LISTA DE LINKS ––>
+                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mim">
+            <h1>Sobre Mim</h1>
+            <p>Me chamo Emilly Luchetti, sou paranaense e tenho 22 anos. Sou extrovertida, gosto de ler, escrever, desenhar e aprender sobre coisas novas nos mais variados assuntos. Minha rotina é equilibrada entre estudos, trabalho e academia.</p>
+        </section>
+
+        <section id="formacao">
+            <h1>Formação</h1>
+            <p>Ensino técnico completo no curso Formacao de Docentes e Atualmente cursando Ensino Superior na área de Engenharia de Software modalidade EAD. Possuo Ingles fluente, Espanhol intermediário e Japones Básico.</p>
+        </section>
+
+        <section id="portfolio">
+            <h1>Portfólio</h1>
+            <p>Link de projetos que já usei CSS e HTML, até mesmo o básico de JS:</p>  <! –– p para cada paragrafo de conteudo ––>
+            <ul>
+              <! –– lista de cada link e projeto com o enderecamento ––>
+                <li><a href="https://github.com/emillyluchetti/cryptex">Projeto Cryptex</a></li>
+                <li><a href="https://github.com/emillyluchetti/jogo-numero-secreto">Jogo Número Secreto</a></li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h1>Link para Contato</h1>
+            <form action="#" method="post">
+               <! –– criacao de um formulario de contato com metodo post e "#" pois nao há enderecamento especifico ––>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Agosto, 2024 Emilly Nicole Arzamendia Rivas Luchetti, RU 4576608</p>
+      <! –– footer com algumas info importantes ––>
+    </footer>
+</body>
+</html>
