@@ -1,0 +1,127 @@
+/* Importando a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte Poppins mais grossa */
+    background-color: #371F76; /* Fundo roxo escuro */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #10002B; /* Cor da navbar e do footer */
+    color: #fff;
+    padding: 10px 0;
+    position: fixed; /* Fixar a navbar no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Garantir que a navbar ocupe toda a largura */
+    z-index: 1000; /* Garantir que a navbar fique sobre outros elementos, facilitando o scroll para outros links */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0; /* Remover margens para o alinhamento correto */
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-style: italic; /* Títulos dos links em itálico */
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #9370DB; /* Mudança para um roxo claro quando o mouse passa por cima */
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 160px); /* Ajuste para garantir que o footer fique ao final */
+    padding-top: 60px; /* Adicionando espaço no topo para a navbar fixa */
+}
+
+h1 {
+    color: #fff;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #371F76;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Garantindo que os inputs também usem a fonte Poppins */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #9370DB; /* Borda muda para roxo claro ao focar */
+}
+
+textarea {
+    height: 100px; /* Mantendo o textarea maior */
+}
+
+button {
+    background-color: #9370DB;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif; /* o botão de envio também usa a fonte Poppins */
+}
+
+button:hover {
+    background-color: #371F76; /* Fundo escuro no hover, muda cor toda vez que o user passar em cima */
+}
+
+footer {
+    background-color: #10002B; /* Seguimos com a mesma cor da navbar, sem ser posicao fixa */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
